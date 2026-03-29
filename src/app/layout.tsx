@@ -15,7 +15,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-950 min-h-screen flex flex-col">
         <header className="border-b border-gray-800 bg-gray-900">
           <div className="px-6 h-16 flex items-center justify-between relative">
             <div className="flex items-center space-x-2">
@@ -31,8 +31,8 @@ export default function RootLayout({
             </nav>
 
             <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-white text-xl">Log In</Link>
-              <Link href="/" className="text-white text-xl bg-sky-700 rounded-lg px-3 py-1">Sign Up</Link>
+              <Link href="/login" className="text-white text-xl py-1">Log In</Link>
+              <Link href="/signup" className="text-white text-xl bg-sky-700 rounded-lg px-2 py-1">Sign Up</Link>
             </nav>
 
             <button className="md:hidden text-2xl text-white right-1" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
@@ -47,8 +47,8 @@ export default function RootLayout({
               <Link href="/brands" className="text-white text-xl">Brands</Link>
               <Link href="/help" className="text-white text-xl">Help</Link>
               <hr className="text-white"/>
-              <Link href="/" className="text-white text-xl">Log In</Link>
-              <Link href="/" className="text-white text-xl bg-sky-700 rounded-lg px-3 py-1 text-center">Sign Up</Link>
+              <Link href="/login" className="text-white text-xl">Log In</Link>
+              <Link href="/signup" className="text-white text-xl bg-sky-700 rounded-lg px-3 py-1 text-center">Sign Up</Link>
             </div>
           </div>
         </header>
@@ -57,7 +57,7 @@ export default function RootLayout({
           <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-400">
             <div>
               <h2 className="text-white font-semibold text-lg">Lev868</h2>
-              <p className="mt-2">Leading IPv6 for all.</p>
+              <p className="mt-2">IPv6 for all.</p>
             </div>
 
             <div>
