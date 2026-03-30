@@ -1,6 +1,6 @@
 "use client"
 
-import "./globals.css";
+import "./global.css";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
@@ -57,7 +57,7 @@ export default function RootLayout({
           <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-400">
             <div>
               <h2 className="text-white font-semibold text-lg">Lev868</h2>
-              <p className="mt-2">IPv6 for all.</p>
+              <p className="mt-2">IPv6 for all</p>
             </div>
 
             <div>
