@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+};
+
 export default function About() {
   return (
     <main className="flex-1 bg-gray-950 px-6 py-16 space-y-10">

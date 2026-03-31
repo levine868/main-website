@@ -30,10 +30,12 @@ export default function RootLayout({
               <Link href="/help" className="text-white text-xl">Help</Link>
             </nav>
 
+            {/*
             <nav className="hidden md:flex space-x-6">
               <Link href="/login" className="text-white text-xl py-1">Log In</Link>
               <Link href="/signup" className="text-white text-xl bg-sky-700 rounded-lg px-2 py-1">Sign Up</Link>
             </nav>
+            */}
 
             <button className="md:hidden text-2xl text-white right-1" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
           </div>
@@ -46,9 +48,11 @@ export default function RootLayout({
               <Link href="/about" className="text-white text-xl">About</Link>
               <Link href="/brands" className="text-white text-xl">Brands</Link>
               <Link href="/help" className="text-white text-xl">Help</Link>
+              {/*
               <hr className="text-white"/>
               <Link href="/login" className="text-white text-xl">Log In</Link>
               <Link href="/signup" className="text-white text-xl bg-sky-700 rounded-lg px-3 py-1 text-center">Sign Up</Link>
+              */}
             </div>
           </div>
         </header>
