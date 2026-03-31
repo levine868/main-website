@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Brands() {
     return (
-        <main className="flex-1">
+        <main className="flex-1 min-h-screen">
             <a href="https://studios.lev868.dynv6.net" target="_blank" className="bg-gray-900 rounded-2xl max-w-lg mx-auto p-8 shadow-lg mt-10 flex justify-between">
                 <div>
                     <h2 className="text-white font-semibold text-2xl mb-3">Lev868 Studios</h2>
