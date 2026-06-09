@@ -18,10 +18,10 @@ export default function RootLayout({
       <body className="bg-gray-950 min-h-screen flex flex-col">
         <header className="border-b border-gray-800 bg-gray-900">
           <div className="px-6 h-16 flex items-center justify-between relative">
-            <div className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <Image src="/logo_circle.png" alt="Logo" width={26} height={26}/>
               <h1 className="font-bold text-2xl text-white">Lev868</h1>
-            </div>
+            </Link>
 
             <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-6">
               <Link href="/" className="text-white text-xl">Home</Link>

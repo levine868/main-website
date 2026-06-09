@@ -13,6 +13,7 @@ export default function Help() {
                 <p className="text-gray-400 text-xl mt-10">Email: enquires@lev868-studios.dynv6.net</p>
                 <p className="text-gray-400 text-xl">Discord: <a href="https://discord.gg/juf34CqGXn" target="_blank">https://discord.gg/juf34CqGXn</a></p>
                 <p className="text-gray-400 text-xl">Status: <a href="https://status.lev868.dynv6.net" target="_blank">https://status.lev868.dynv6.net</a></p>
+                <p className="text-gray-400 text-xl">Github: <a href="https://github.com/levine868" target="_blank">https://github.com/levine868</a></p>
             </section>
         </main>
     );
