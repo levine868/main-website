@@ -61,7 +61,7 @@ export default function RootLayout({
           <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-400">
             <div>
               <h2 className="text-white font-semibold text-lg">Lev868</h2>
-              <p className="mt-2">IPv6 for all</p>
+              <p className="mt-2">Helping the worldwide community</p>
             </div>
 
             <div>
@@ -72,13 +72,13 @@ export default function RootLayout({
               </ul>
             </div>
 
-            <div>
+            {/*<div>
               <h3 className="text-white font-medium mb-2">Legal</h3>
               <ul className="space-y-2">
                 <li><a href="/privacy">Privacy Policy</a></li>
                 <li><a href="/tos">Terms of Service</a></li>
               </ul>
-            </div>
+            </div>*/}
           </div>
 
           <div className="border-t border-gray-800 text-center text-gray-500 text-sm py-4">
