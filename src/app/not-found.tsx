@@ -6,7 +6,7 @@ export default function NotFound() {
             <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
                 <h1 className="text-white text-5xl font-bold">Error 404</h1>
                 <h2 className="text-white text-3xl mt-4">This page is on diversion, please<br />listen for further announcements</h2>
-                <Link href="/" className="mt-32 text-white text-2xl bg-sky-900 rounded-lg px-4 py-2 font-bold">Go Home</Link>
+                <Link href="/" className="mt-32 text-white text-2xl bg-sky-600 rounded-lg px-4 py-2 font-bold hover:bg-sky-800 active:bg-sky-950">Go Home</Link>
             </section>
         </main>
     );

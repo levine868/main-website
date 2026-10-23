@@ -11,7 +11,7 @@ export default function Home() {
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
         <h1 className="text-white text-5xl font-bold">Lev868</h1>
         <h2 className="text-white text-3xl mt-4">Keeping you on the right route</h2>
-        <Link href="/brands" className="mt-32 text-white text-2xl bg-sky-900 rounded-lg px-4 py-2 font-bold">Our Brands</Link>
+        <Link href="/brands" className="mt-32 text-white text-2xl bg-sky-600 rounded-lg px-4 py-2 font-bold hover:bg-sky-800 active:bg-sky-950">Our Brands</Link>
         {/*<div className="absolute bottom-2 text-gray-400 text-sm opacity-70">↓ Scroll for more info</div>*/}
       </section>
 
