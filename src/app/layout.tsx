@@ -84,15 +84,17 @@ export default function RootLayout({
               <Link href="/profile/signup" className={`text-white text-xl bg-sky-600 rounded-lg px-2 py-1 hover:bg-sky-800 active:bg-sky-950 ${signed ? "hidden": ""}`}>Sign Up</Link>
             </nav>
 
-            <button className={`text-gray-400 text-xl hidden py-1 md:flex ${signed ? "" : "hidden"}`} onClick={() => setProfile(!profile)}><User />{username}</button>
+            <div ref={profileRef} className={`${signed ? "" : "hidden"}`}>
+              <button className="text-gray-400 text-xl hidden py-1 md:flex" onClick={() => setProfile(!profile)}><User />{username || "Profile"}</button>
 
-            <div ref={profileRef} className={`transition-all right-5 origin-top flex flex-col top-21 w-50 p-2 rounded-xl bg-gray-900 absolute overflow-hidden duration-300 ${profile ? "max-h-96 opacity-100 scale-y-100" : "scale-y-0 max-h-0 opacity-0"}`}>
-              <Link href="/profile" className="text-white flex"><User />Profile</Link>
-              <button onClick={signout} className="text-red-500 text-left mt-1 flex"><LogOut />Sign Out</button>
+              <div className={`transition-all right-5 origin-top flex flex-col top-21 w-50 p-2 rounded-xl bg-gray-900 absolute overflow-hidden duration-300 ${profile ? "max-h-96 opacity-100 scale-y-100" : "scale-y-0 max-h-0 opacity-0"}`}>
+                <Link href="/profile" className="text-white flex"><User />Profile</Link>
+                <button onClick={signout} className="text-red-500 text-left mt-1 flex"><LogOut />Sign Out</button>
+              </div>
+              </div>
+
+              <button className="md:hidden text-2xl text-white right-1" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
             </div>
-
-            <button className="md:hidden text-2xl text-white right-1" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
-          </div>
 
           <div className={`md:hidden overflow-hidden transition-all duration-300 ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
             <div className="px-6 pb-4 flex flex-col space-y-4">
@@ -101,7 +103,7 @@ export default function RootLayout({
               <Link href="/brands" className="text-white text-xl">Brands</Link>
               <Link href="/help" className="text-white text-xl">Help</Link>
               <hr className="text-white"/>
-              <Link href="/profile" className={`text-gray-400 text-xl py-1 flex ${signed ? "" : "hidden"}`}><User />{username}</Link>
+              <Link href="/profile" className={`text-gray-400 text-xl py-1 flex ${signed ? "" : "hidden"}`}><User />{username || "Profile"}</Link> {/* LOGOUT THINGY */}
               <Link href="/profile/login" className={`text-white text-xl ${signed ? "hidden": ""}`}>Log In</Link>
               <Link href="/profile/signup" className={`text-white text-xl bg-sky-600 rounded-lg px-3 py-1 text-center hover:bg-sky-800 active:bg-sky-950 ${signed ? "hidden": ""}`}>Sign Up</Link>
             </div>

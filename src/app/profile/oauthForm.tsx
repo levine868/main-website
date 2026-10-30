@@ -12,7 +12,7 @@ export default function OAuthForm() {
         return redirect("/profile");
     }
   }
-  open()
+  open();
 
   async function handleOAuth(provider: Provider) {
     const { error } = await supabase.auth.signInWithOAuth({
